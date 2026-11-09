@@ -59,12 +59,6 @@ Exclude pure technical/implementation checks: mock wiring, "function is called o
 - Order logically: group related rules adjacent to each other (by domain entity or flow), then number continuously from 1.
 - Skipped/disabled/`xit`/`@Ignore`/`t.Skip` tests: omit by default; they may be stale.
 
-## Safety (ACV data policy)
-
-- Never copy secrets, API keys, tokens, passwords, certificates, SSNs, payment/bank data, or real customer/personal data found in test files or fixtures into the output. Describe the rule generically instead (e.g., "a valid API token is required").
-- If a real-looking credential appears in a test, mention it to the user (without echoing the value) and suggest rotating it and reporting to security@acvauctions.com.
-- Test source code is Class 3 (Confidential): the output file stays local in the cache directory. Do not upload, post, or send it anywhere unless the user explicitly asks.
-
 ## Final response
 
 Keep it short:
