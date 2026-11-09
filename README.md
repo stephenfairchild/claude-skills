@@ -8,7 +8,17 @@ A collection of reusable [Claude Code](https://claude.com/claude-code) skills. E
 | --- | --- |
 | [`extract-test-rules`](extract-test-rules/SKILL.md) | Scans a service's tests (unit, API, integration, e2e) and extracts the business rules they encode into a numbered `.txt` file in `~/.cache/extract-test-rules/`. |
 
-## Install
+## Quick install
+
+One line. Clones the repo to `~/.claude/claude-skills` and symlinks every skill into `~/.claude/skills`. Re-run it any time to update.
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/stephenfairchild/claude-skills/main/install.sh | bash
+```
+
+Requires `git`. Restart Claude Code afterwards. Skills with the same name that already exist as real folders in `~/.claude/skills` are skipped, not overwritten.
+
+## Manual install
 
 Clone the repo somewhere permanent:
 
