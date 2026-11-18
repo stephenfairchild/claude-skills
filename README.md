@@ -7,6 +7,7 @@ A collection of reusable [Claude Code](https://claude.com/claude-code) skills. E
 | Skill | Description |
 | --- | --- |
 | [`extract-test-rules`](extract-test-rules/SKILL.md) | Scans a service's tests (unit, API, integration, e2e) and extracts the business rules they encode into a numbered `.txt` file in `~/.cache/extract-test-rules/`. |
+| [`ssh-vuln-patch`](ssh-vuln-patch/SKILL.md) | Scans servers over SSH with Trivy, builds a prioritized patch list, then walks you through patching each item with per-item approval. |
 
 ## Install
 
